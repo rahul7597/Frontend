@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1
+        {
+            margin-top: 5%;
+            height: 80vh;
+            width: 30%;
+            
+        }
+        .box2
+        {
+            margin-top: 5%;
+            height: 80vh;
+            width: 30%;
+            
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1 img
+        {
+            height: 100%;
+            width: 100%;
+        }
+        .tanish
+        {
+            height: 80%;
+            width: 80%;
+            border: 1px solid black;
+            margin-bottom: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        
+        }
+        .part1
+        {
+           
+            height: 30%;
+            width: 100%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .part1 img{
+            width: 60%;
+        }
+        .part2
+        {
+            height: 40%;
+            width: 80%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        .part3
+        {
+            height: 30%;
+            width: 100%;
+         
+            display:flex;
+            justify-content: center;
+          align-items: center;
+        }
+        .part3-1 img{
+            height: 5vh;
+            width: 5vh;
+            margin-bottom: 50%;
+            margin-right: 2px;
+        }
+        .part3-2
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h6{
+            margin-top: 20px;
+            font-family: sans-serif;
+            font-weight:lighter;
+            margin-bottom: 5px;
+            
+        }
+        .part3-2 p{
+            margin-top: 10%;
+            color: rgb(105, 105, 244);
+        }
+        .anisha
+        {
+           height: 10%;
+           width: 80%;
+           border: 1px solid black;
+           display: flex;
+           justify-content: center;
+           align-items: center;   
+        }
+        .anisha1
+        {
+            margin-left:3px;
+        }
+        .manish
+        {
+            height: 10%;
+           
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           justify-content:space-evenly;
+           flex-direction: column;
+        }
+        .manish img{
+            display: flex;
+            justify-content: center;
+            height: 5.9vh;
+            width: 40%;
+           
+        }
+        .hr 
+        {
+            height: 0;
+            display: flex;
+            justify-content: center;
+           
+        }
+        .hr hr{
+            margin-top: 15px;
+            width: 50%;
+        }
+        .hr p{
+            position: relative;
+            margin-top: 5px;
+        }
+        .Login
+        {
+            color: white;
+            background-color: rgba(61, 119, 255, 0.855);
+        }
+        input
+        {
+            height: 30%;
+            margin-top: 10px;
+            border-radius: 4px;
+            border:1px solid black;
+            background-color: rgb(246, 247, 249);
+        }
+        .between
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .between img{
+            width: 50%;
+            margin: 4px;
+        }
+        .manish2 
+        {
+            margin-top: 20%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="main">
+        <div class="container">
+            <div class="box1">
+                <img src="Screenshot 2024-01-05 152038.png" alt="">
+            </div>
+            
+            <div class="box2">
+               <div class="tanish">
+                <div class="part1">
+                   <img src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="part2">
+                    <input type="text" placeholder="    phone,username, or email">
+                    <input type="text" placeholder="    Password">
+                    <input type="submit" value="Log in" class="Login">
+                    <div class="hr">
+                        <hr><p>or</p><hr>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="part3-1">
+                        <img src="facebook1.png" alt="">
+                    </div>
+                       
+                    <div class="part3-2">
+                        <p>Login with Facebook</p>
+                    <h6>Forgot Password?</h6>
+                    </div>
+                    
+                </div>
+               </div>
+               <div class="anisha">
+                  <p>Don't have an account?</p>
+                  <a href="submit" class="anisha1">Sign up</a>
+               </div>
+               <div class="manish">
+                <div class="manish2">
+                    <p>Get the app</p>
+                </div>
+              
+              <div class="between">
+                <img src="last.png" alt="">
+                <img src="last2.png" alt="" >
+              </div>
+                 
+               </div> 
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
